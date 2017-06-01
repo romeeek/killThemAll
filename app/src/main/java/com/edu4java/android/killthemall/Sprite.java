@@ -96,13 +96,13 @@ public class Sprite {
         float y1 = height/2 + y;
         float r = 0;
 
-        if(width> height){
+        if(width > height){
             r = height/2;
         }else {
             r = width/2;
         }
 
-        if (Math.pow((x2-x1),2) + Math.pow((y2 - y1), 2) < Math.pow(r,2)){
+        if (Math.pow(((width/2 + x2)-x1),2) + Math.pow(((height/2 + y2) - y1), 2) < Math.pow(r,2)){
             return true;
         }
 
