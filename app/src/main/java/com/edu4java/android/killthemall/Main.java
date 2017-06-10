@@ -12,5 +12,12 @@ public class Main extends Activity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(new GameView(this));
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        setContentView(new GameView(this));
     }
 }
